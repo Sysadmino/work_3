@@ -11,211 +11,72 @@
     <title>sensei</title>
   </head>
 <body>
-    <header id="header" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <img src="img/Logo%20inverse.png" alt="logo" class="logo">
-                </div>
-                <div class="col-lg-5 ml-auto">
-                    <nav>
-                        <ul class="menu d-flex justify-content-center">
-                            <li class="menu__item">
-                                <a href="#">
-                                    Особенности
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#">
-                                    Контакты
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#">
-                                    Блог
-                                </a>
-                            </li>
-                        </ul>    
-                    </nav>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div id="leftBlock" class="animated fadeInLeft offer justify-content-start">
-                        <h1 class="offer__title">
-                            Apple iPhone X 64 ГБ черный
-                        </h1>
-                        <div class="offer__intro">
-                            iPhone X воплощает мечту в реальность.<br> Это смартфон будущего
-                        </div>
-                        <p class="offer__text">
-                            Черный Apple iPhone X 64 ГБ выделяется среди остальных линеек смартфонов. У него особенный дизайн — скругленные углы, прочный алюминиевый корпус и большой дисплей. HDR-дисплей Super Retina.
-                            Мощный процессор A11 Bionic. Впечатляющие основная и фронтальная камеры.
-                        </p>
-                        <button data-toggle="tooltip" data-placement="right" title="IPhoneX - Успей купить по выгодной цене!"  class="btn btn_1 d-flex justify-content-center">
-                            Купить
-                        </button>
-                    </div>
-                </div>
-                <div class="animated fadeInRight col-lg-4 ml-auto">
-                    <img src="img/phone.png" alt="phone" class="phone">
-                </div>
-            </div>
+   <div className="App" style="text-align: center">
+      <h1 style="margin-bottom: 20px; margin-top: 20px">Вакансии</h1>
+      <div id="pjax-job-list">
+        <div
+          className="card card-hover card-visited wordwrap job-link"
+          style="
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            display: block;
+            padding: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14);
+            border-radius: 5px;
+            text-align: left;
+          "
+        >
+          <h2>
+            <a href="https://sysadmino.github.io/vacancy-app"
+              >Старший Java-разработчик</a
+            >
+          </h2>
+          <div className="add-top-xs">
+            <span>
+              <b>СберМобайл/Телеком</b>
+            </span>
+          </div>
+          <p className="overflow text-muted add-top-sm cut-bottom">
+            СберМобайл - новый мобильный оператор связи от Сбербанка ищет
+            Старшего разработчика java. Возможность практически с нуля сделать
+            связывающий воедино системы оператора backend
+          </p>
         </div>
-    </header>
-    
-    <section id="features" class="featurs">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="wow fadeIn title" data-wow-delay="0.1s">
-                        <h2 class="title__main">
-                            Дизайн и дисплей. И только дисплей.
-                        </h2>
-                        <p class="title__text">
-                            Совершенно новый дисплей Super Retina с диагональю 5,8 дюйма, который удобно лежит в руке и потрясающие выглядит, — это и есть iPhone X.
-                        </p>
-                    </div>
-                </div>
-            </div> 
-            <div class="row wow fadeIn" data-wow-offset="290">
-                <div class="col-lg-4">
-                    <div class="feature d-flex">
-                        <i class="fa fa-mobile feature__icon" aria-hidden="true"></i>
-                        <div class="feature__block">
-                            <h3 class="feature__title">
-                                Дисплей Super Retina
-                            </h3>
-                            <p class="feature__text">
-                                Совершенно новый дисплей Super Retina с диагональю 5,8 дюйма, который удобно лежит в руке и потрясающе выглядит, — это и есть iPhone X.
-                            </p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-lg-4">
-                    <div class="feature d-flex">
-                        <i class="fa fa-superpowers feature__icon1" aria-hidden="true"></i>
-                        <div class="feature__block">
-                            <h3 class="feature__title">
-                                Новый корпус
-                            </h3>
-                            <p class="feature__text1">
-                                Такого прочного стекла с обеих сторон у iPhone ещё не было. Хирургическая нержавеющая сталь. Беспроводная зарядка. А также защита от воды и пыли..
-                            </p>
-                        </div>
-                    </div>
-                </div>    
-            
-                <div class="col-lg-4">
-                    <div class="feature d-flex">
-                        <i class="fa fa-laptop feature__icon2" aria-hidden="true"> </i>
-                        <div class="feature__block">
-                            <h3 class="feature__title">
-                                OLED для iPhone X
-                            </h3>
-                            <p class="feature__text2">
-                            Это первый OLED-дисплей, соответствующий высшим стандартам iPhone: невероятно яркие цвета отображаются с поразительной точностью, а контрастность достигает показателя 1 000 000:1.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            <div class="col-lg-4">
-                <div class="feature d-flex">
-                    <i class="fa fa-cogs feature__icon3" aria-hidden="true"></i>
-                    <div class="feature__block">
-                        <h3 class="feature__title">
-                            Инновационные технологии
-                        </h3>
-                        <p class="feature__text3">
-                            Дисплей и элегантно закруглённый по углам корпус интегрированы ещё лучше — мы смогли добиться этого, используя несколько уникальных технологий.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="feature d-flex">
-                    <i class="fa fa-camera-retro feature__icon4" aria-hidden="true"></i>
-                    <div class="feature__block">
-                        <h3 class="feature__title">
-                            Камера TrueDepth
-                        </h3>
-                        <p class="feature__text4">
-                            В миниатюрном модуле скрыты наши самые передовые технологии и возможности, в том числе камеры и сенсоры, обеспечивающие работу Face ID.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="feature d-flex">
-                    <i class="fa fa-cloud-download feature__icon5" aria-hidden="true"></i>
-                    <div class="feature__block">
-                        <h3 class="feature__title">
-                            Apple Pay
-                        </h3>
-                        <p class="feature__text5">
-                            Технология Face ID надёжна и безопасна, поэтому её можно применять с Apple Pay. Теперь для оплаты покупки 
-                        </p>
-                    </div>
-                </div>
-            </div>       
+        <div
+          className="card card-hover card-visited wordwrap job-link"
+          style="
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            display: block;
+            padding: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14);
+            border-radius: 5px;
+            text-align: left;
+          "
+        >
+          <h2>
+            <a href="https://sysadmino.github.io/vacancy-app"
+              >Backend-разработчик Java/Kotlin</a
+            >
+          </h2>
+          <div className="add-top-xs">
+            <span>
+              <b>Okko</b>
+            </span>
+          </div>
+          <p className="overflow text-muted add-top-sm cut-bottom">
+            Мультимедийный сервис Okko — один из крупнейших российских
+            VoD-сервисов, лидер по платной модели монетизации. Проект стартовал
+            в 2011 году и сегодня представлен на всех ключевых платформах: Smart
+            TV, mobile (IOS и Android), Apple TV, PlayStation 3, 4 и 5, web
+            (ПК). Okko входит в экосистему Сбера.
+          </p>
         </div>
-    </section>
-    
-    <section id="touch" class="touch">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title1 wow fadeInDown" data-wow-offset="200">
-                        <h2 class="title__main1">
-                            Подписка на рассылку
-                        </h2>
-                        <p class="title__text1">
-                            Совершенно новый дисплей Super Retina с диагональю 5,8 дюйма, который удобно лежит в руке и потрясающие выглядит, — это и есть iPhone X.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row wow fadeIn">
-                <div class="col-lg-10 frm">
-                    <form action="#" class="form">
-                        <input type="email" placeholder="Введите свой Email" class="form__input" required>
-                        <button type="submit" class="form__btn">Подписаться</button>
-                    </form>
-                </div>   
-            </div>
-        </div>    
-    </section>
-    
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="credits wow fadeIn">
-                        ООО «AppStore», Шлюзовая набережная 6, Москва, Россия
-                    </div>
-                </div>   
-            </div>
-        </div>     
-    </footer>
-        
-    <!-- Hidden Required Fields Данные администратора
-		<input type="hidden" name="project_name" value="Site Name">
-		<input type="hidden" name="admin_email" value="admin@mail.com">
-		<input type="hidden" name="form_subject" value="Form Subject">
-
-       <!-- Подключения библиотек --> 
-    <link rel="stylesheet" href="css/animate.css">
-    <script src="js/wow.min.js"></script>   
-    <script>
-        new WOW().init();
-    </script>       
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>    
-    <script src="js/jquery-2.2.4.min.js"></script>
-        <!-- Sweet Alert (Модальные окна) -->
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
-  
-    <script src="js/bootstrap.min.js"></script>    
-    <script src="js/main.js"></script>    
+      </div>
+    </div>
 </body>
 </html>
